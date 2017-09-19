@@ -1,16 +1,10 @@
 SystemJS.config({
-  browserConfig: {
-    "baseURL": ".",
-    "paths": {
-      "npm:": "/jspm_packages/npm/",
-      "app/": "/src/"
-    }
+  paths: {
+    "npm:": "jspm_packages/npm/",
+    "app/": "src/"
   },
-  nodeConfig: {
-    "paths": {
-      "npm:": "jspm_packages/npm/",
-      "app/": "src/"
-    }
+  browserConfig: {
+    "baseURL": "."
   },
   devConfig: {
     "map": {
@@ -40,9 +34,6 @@ SystemJS.config({
 });
 
 SystemJS.config({
-  "browserConfig": {
-    "baseURL": "."
-  },
   packageConfigPaths: [
     "npm:@*/*.json",
     "npm:*.json"

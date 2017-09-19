@@ -5,3 +5,5 @@ let container = document.getElementById('container');
 
 console.log('ES6', ES6);
 console.log('CJS', CJS);
+
+export default container;
